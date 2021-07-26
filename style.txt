@@ -1,0 +1,149 @@
+/* classi generiche */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,.h1,.h2{
+    font-family: 'Petit Formal Script', cursive;
+}
+
+
+/* classi navbar */
+
+.bg-yellow{
+    background-color: rgb(250, 200, 70) !important;
+}
+
+#navbar{
+    z-index:  9999;
+    transition: 1s;
+}
+
+
+/* classi header */
+
+.header{
+    height: 100vh;
+    min-width: 500px;
+    background: url('./media/gel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
+}
+
+.my-mt{
+    margin-top: 200px;
+}
+
+
+/* classi fase di attenzione */
+
+.over-box{
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    height: 400px;
+}
+
+.over-img{
+    transition: 1s;
+    padding-top: 80px;
+}
+
+.over-box:hover .over-img{
+    transform: scale(1.1);
+}
+
+.over-text{
+    position: absolute;
+    padding: 20px 40px;
+    transition: 1s;
+    z-index: 1;
+}
+
+.over-box::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    content: "";
+    transition: 1s;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.over-box:hover::after{
+    opacity: 1;
+}
+
+/* area BG-section call to action */
+.bg-section-cta{
+    height: 600px;
+    background: linear-gradient(white, transparent, white), url(./media/home-gelati.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* area BG-section call to action-2 */
+.bg-section-cta-2{
+    height: 600px;
+    background: linear-gradient(white, transparent, white),  url(./media/galatomasthead.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.alt-btn{
+    margin-top: 120px;
+}
+
+
+/* selezione gelati */
+.product-label{
+    position: relative;
+    top: 50px;
+    left: 0px;
+    padding-left: 0px;
+    width: 125px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    background-color: #d0ecf0;
+    z-index: 99;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.wrapper .img-fluid{
+    transition: 0.4s;
+}
+
+.wrapper .img-fluid:hover{
+    transform: scale(1.1);
+}
+
+
+/* media-query per maste head */
+@media only screen and (max-width: 576px) {
+    .header{
+        background-position: -920px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* style per il carosello per i commenti */
+.w-250{
+    width: 300px !important;
+}

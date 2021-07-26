@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "progetto-gelateria",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
