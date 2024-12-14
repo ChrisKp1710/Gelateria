@@ -1,427 +1,639 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- My style css -->
-        <link rel="stylesheet" href="./style.css">
+    <!-- My style css -->
+    <link rel="stylesheet" href="./style.css" />
 
-        <link rel="shortcut icon" href="./media/logo-piccolo.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./media/logo-piccolo.svg"
+      type="image/x-icon"
+    />
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-        <!-- My google Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <!-- My google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Petit+Formal+Script&display=swap"
+      rel="stylesheet"
+    />
 
-        <title>Il Gelato 🍨</title>
+    <title>Il Gelato 🍨</title>
+  </head>
 
-    </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar py-3 position-fixed w-100" id="navbar">
+      <a href="#nav" class="navbar-brand">
+        <img
+          src="./media/gelatoonline.png"
+          class="ms-5"
+          width="200"
+          alt=""
+          id="navbarBrand"
+        />
+      </a>
 
-    <body>
+      <div>
+        <a
+          href="#form"
+          class="btn px-4 rounded-pill text-uppercase text-black bg-yellow shadow font-weight-bold d-none me-5"
+          id="navbarCTAScroll"
+          >Prenota ora 🍨</a
+        >
+      </div>
+    </nav>
 
-        <!-- navbar -->
-        <nav class="navbar py-3 position-fixed w-100 " id="navbar">
-            <a href="#nav" class="navbar-brand">
-                <img src="./media/gelatoonline.png" class="ms-5" width="200" alt="" id="navbarBrand">
-            </a>
+    <!-- header -->
+    <header class="header">
+      <div class="container h-100">
+        <div class="row h-100 align-item-center">
+          <div class="col-12 col-md-6 text-black text-shadow">
+            <p class="lead font-italic my-mt ms-5 fs-5">Voglia di gelato?</p>
+            <h1 class="ms-5 display-4 my-5">Il Gelato</h1>
+            <p class="ms-5 fs-5">
+              Questo e il punto in qui inserire la nostra user proposition, per
+              far capire che la soluzione che si cercava è <i>proprio</i> quella
+              che offriamo!!
+            </p>
+          </div>
 
-            <div>
-                <a href="#form" class="btn px-4 rounded-pill text-uppercase text-black bg-yellow shadow font-weight-bold d-none me-5" id="navbarCTAScroll">Prenota ora 🍨</a>
-            </div>
-        </nav>
+          <div class="col-12 text-center text-lg-right">
+            <a
+              href="#form"
+              id="headerCTA"
+              class="btn btn-lg text-black bg-yellow rounded-pill px-3 shadow text-uppercase"
+              >Prenota ora 🍨</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
 
-        <!-- header -->
-        <header class="header">
-            <div class="container h-100">
-                <div class="row h-100 align-item-center">
-                    <div class="col-12 col-md-6 text-black text-shadow">
-                        <p  class="lead font-italic my-mt ms-5 fs-5">Voglia di gelato?</p>
-                        <h1 class="ms-5 display-4 my-5">Il Gelato</h1>
-                        <p class="ms-5 fs-5">Questo e il punto in qui inserire la nostra user proposition, per far capire che la soluzione che si cercava è <i>proprio</i> quella che offriamo!!</p>
-                    </div>
+    <!-- fase di attenzione -->
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2>I vantaggi generici del gelato</h2>
+          <p class="lead text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            excepturi recusandae impedit quisquam! Commodi nisi laborum placeat,
+            quae tenetur veritatis, at ratione in alias assumenda fugit
+            consequuntur molestias ipsa quos?
+          </p>
+        </div>
+      </div>
 
-                    <div class="col-12 text-center text-lg-right">
-                        <a href="#form" id="headerCTA" class="btn btn-lg text-black bg-yellow rounded-pill px-3 shadow text-uppercase">Prenota ora 🍨</a>
-                    </div>
-                </div>
-            </div>
-
-        </header>
-
-        <!-- fase di attenzione -->
-        <div class="container my-5 py-5">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <h2>I vantaggi generici del gelato</h2>
-                    <p class="lead text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi recusandae impedit quisquam! Commodi nisi laborum placeat, quae tenetur veritatis, at ratione in alias assumenda fugit consequuntur molestias ipsa quos?</p>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="over-box">
-                        <p class="lead text-secondary text-center bg-white w-100 over-text">Motivazione</p>
-                        <img src="./media/amarena-mod.jpg" class="img-fluid over-img" alt="">
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="over-box">
-                        <p class="lead text-secondary text-center bg-white w-100 over-text">Motivazione</p>
-                        <img src="./media/nocciola-mod.jpg" class="img-fluid over-img " alt="">
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="over-box">
-                        <p class="lead text-secondary text-center bg-white w-100 over-text">Motivazione</p>
-                        <img src="./media/peccatodigola-mod.jpg" class="img-fluid over-img" alt="">
-                    </div>
-                </div>
-            </div>
+      <div class="row mt-5">
+        <div class="col-12 col-md-4 mb-3">
+          <div class="over-box">
+            <p class="lead text-secondary text-center bg-white w-100 over-text">
+              Motivazione
+            </p>
+            <img
+              src="./media/amarena-mod.jpg"
+              class="img-fluid over-img"
+              alt=""
+            />
+          </div>
         </div>
 
-        <div class="container-fluid my-5 py-5 bg-section-cta">
-            <div class="row h-100 justify-content-center align-item-center">
-                <div class="col-8 text-center">
-                    <p class="h1 text-bold text-shadow">Altro invito alla azione!</p>
-                </div>
-                <div class="col-12 text-center">
-                    <a href="#form" class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-black ">Prenota ora 🍨</a>
-                </div>
-            </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="over-box">
+            <p class="lead text-secondary text-center bg-white w-100 over-text">
+              Motivazione
+            </p>
+            <img
+              src="./media/nocciola-mod.jpg"
+              class="img-fluid over-img"
+              alt=""
+            />
+          </div>
         </div>
 
+        <div class="col-12 col-md-4 mb-3">
+          <div class="over-box">
+            <p class="lead text-secondary text-center bg-white w-100 over-text">
+              Motivazione
+            </p>
+            <img
+              src="./media/peccatodigola-mod.jpg"
+              class="img-fluid over-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- selezione gelati -->
-        <div class="container my-5 py-5">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <h2>La nostra selezione</h2>
-                    <p class="lead text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure distinctio, dignissimos facere aliquam ex culpa unde totam libero impedit ratione nobis cumque quas cupiditate architecto quod! Recusandae dolorem explicabo perspiciatis?</p>
-                </div>
-            </div>
+    <div class="container-fluid my-5 py-5 bg-section-cta">
+      <div class="row h-100 justify-content-center align-item-center">
+        <div class="col-8 text-center">
+          <p class="h1 text-bold text-shadow">Altro invito alla azione!</p>
+        </div>
+        <div class="col-12 text-center">
+          <a
+            href="#form"
+            class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-black"
+            >Prenota ora 🍨</a
+          >
+        </div>
+      </div>
+    </div>
 
-            <div class="row">
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-amarena.webp" class="img-fluid mt-4" alt="gusto gelato amarena">
-                    </div>
-                </div>
+    <!-- selezione gelati -->
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2>La nostra selezione</h2>
+          <p class="lead text-secondary">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+            distinctio, dignissimos facere aliquam ex culpa unde totam libero
+            impedit ratione nobis cumque quas cupiditate architecto quod!
+            Recusandae dolorem explicabo perspiciatis?
+          </p>
+        </div>
+      </div>
 
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-banana.webp" class="img-fluid mt-4" alt="gusto gelato banana">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-cioccolato.webp" class="img-fluid mt-4" alt="gusto gelato cioccolato">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-crema.webp" class="img-fluid mt-4" alt="gusto gelato crema">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-fragola.webp" class="img-fluid mt-4" alt="gusto gelato fragola">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-pistacchio.webp" class="img-fluid mt-4" alt="gusto gelato pistacchio">
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-cookies.webp" class="img-fluid mt-4" alt="gusto gelato biscotto">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-2">
-                    <div class="product-label text-center">CATEGORIA</div>
-                    <div class="wrapper">
-                        <img src="./media/gusto-frutti-di-bosco.webp" class="img-fluid mt-4" alt="gusto gelato frutti di bosco">
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-amarena.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato amarena"
+            />
+          </div>
         </div>
 
-
-        <!-- secondo invito ad un azzione -->
-        <div class="container-fluid my-5 py-5 bg-section-cta-2">
-            <div class="row h-100 justify-content-center align-item-center">
-                <div class="col-8 text-center">
-                    <p class="h1 text-bold text-shadow">Altro invito alla azione!</p>
-                </div>
-                <div class="col-12 text-center">
-                    <a href="#form" class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-black ">Prenota ora 🍨</a>
-                </div>
-            </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-banana.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato banana"
+            />
+          </div>
         </div>
 
-
-        <!-- sezione recensioni -->
-        <div class="container my-5 py-5">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <h2>I nostri feedback</h2>
-                    <p class="lead text-secondary mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure distinctio, dignissimos facere aliquam ex culpa unde totam libero impedit ratione nobis cumque quas cupiditate architecto quod! Recusandae dolorem explicabo perspiciatis?</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6 col-lg-3 mb-">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-1.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-3">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-2.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-3">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-3.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-3">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-4.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-3">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-5.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-3">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-6.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-3">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-7.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 mb-3">
-                    <div class="shadow p-2">
-                        <img src="./media/recensione-8.jpg" class="img-fluid" alt="feedback clienti">
-                    </div>
-                </div>
-
-            </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-cioccolato.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato cioccolato"
+            />
+          </div>
         </div>
 
-
-        <!-- container per carosello / per attivare il carosello cancellare ('d-none')-->
-        <div class="container my-5 py-5 d-none">
-            <div class="row justify-content-between px-3 flex-nowrap" style="overflow-x: scroll;">
-                
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-2 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-3 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-4 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-5 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-6 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-7 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-8 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-9 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-
-
-                <!-- commento n-10 -->
-                <div class="w-250 p-3 m-3 flex-shrink-0">
-                    <p class="lead mb-0">Nome Cognome</p>
-                    <p class="small font-ic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem voluptate commodi iste placeat est, porro quas voluptas dolor. Quisquam temporibus expedita eveniet voluptate quibusdam quasi repellat molestias itaque quam.</p>
-                </div>
-            </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-crema.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato crema"
+            />
+          </div>
         </div>
 
-
-        <!-- sezione con timer -->
-        <div class="container-fluid my-5 py-5 bg-section-timer">
-            <div class="row h-100 justify-content-center align-item-center">
-                <div class="col-12 text-center text-black text-shadow">
-                    <p class="h1">Si sciolgono!</p>
-                </div>
-
-                <div class=" col-6 col-md-2 text-black text-shadow text-center">
-                    <p id="giorniMancanti" class="h1"></p>
-                    <p class=" fs-4">giorni</p>
-                </div>
-
-                <div class=" col-6 col-md-2 text-black text-shadow text-center">
-                    <p id="oreMancanti" class="h1"></p>
-                    <p class="fs-4">ore</p>
-                </div>
-
-                <div class=" col-6 col-md-2 text-black text-shadow text-center">
-                    <p id="minutiMancanti" class="h1"></p>
-                    <p class="fs-4">minuti</p>
-                </div>
-
-                <div class=" col-6 col-md-2 text-black text-shadow text-center">
-                    <p id="secondiMancanti" class="h1"></p>
-                    <p class="fs-4">secondi</p>
-                </div>
-
-                <div class="col-12 text-center">
-                    <a href="#form" class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-black">Prenota ora 🍨</a>
-                </div>
-            </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-fragola.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato fragola"
+            />
+          </div>
         </div>
 
-
-
-        <!-- form dei contatti -->
-        <div class="container my-my-5 py-5">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="./media/gelatoonline.png" class="w-50 mx-auto d-block mb-5" alt="">
-                    <p class="lead text-secondary my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos enim voluptate distinctio, eius repellendus assumenda neque cupiditate itaque incidunt autem dolorem ullam error ducimus debitis veniam exercitationem eaque! Eius, omnis.</p>
-                </div>
-                <div class="col-12 col-md-6">
-
-                    <form id="form" class="card p-5 border-0 shadow" action="send">
-
-                        <p class="h2 mb-4">Prenota il tuo gelato !</p>
-
-                        <div class="form-group mb-4">
-                            <label for="name" class="mb-0 text-secondary">Il tuo nome</label>
-                            <input type="text" class="form-control border-bottom-yellow" id="name" placeholder="Christian" >
-                        </div>
-
-                        <div class="form-group mb-4">
-                            <label for="email" class="mb-0 text-secondary">La tua email</label>
-                            <input type="email" class="form-control border-bottom-yellow" id="email" placeholder="Christian.pinto@gmail.com" >
-                        </div>
-
-                        <div class="form-group mb-4">
-                            <label for="tel" class="mb-0 text-secondary">Il tuo telefono</label>
-                            <input type="tel" class="form-control border-bottom-yellow" id="tel" placeholder="+39-4267902183" >
-                        </div>
-
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="privacy">
-                            <label class="form-check-label text-secondary font-ic" for="privacy">Acceto termini e condizioni</label>
-                        </div>
-
-                        <button type="submit" class="btn py-3 btn-lg rounded-pill text-uppercase bg-yellow text-black text-shadow">
-                            Prenota ora 🍨
-                        </button>
-
-                    </form>
-
-                </div>
-            </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-pistacchio.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato pistacchio"
+            />
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-cookies.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato biscotto"
+            />
+          </div>
         </div>
 
-        <footer class="container-fluid py-5 bg-footer">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img src="./media/logo-piccolo.svg" class="my-w-100" alt="">
-                    <hr class="hr">
-                    <p class="m-0">Via cardinal pacca n.13</p>
-                    <p class="m-0">00165 Roma, Rm</p>
-                    <p class="m-0">P.IVA IT42687440710</p>
-                    <p class="mt-4">IlGelato@gmail.com</p>
-                </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="product-label text-center">CATEGORIA</div>
+          <div class="wrapper">
+            <img
+              src="./media/gusto-frutti-di-bosco.webp"
+              class="img-fluid mt-4"
+              alt="gusto gelato frutti di bosco"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- secondo invito ad un azzione -->
+    <div class="container-fluid my-5 py-5 bg-section-cta-2">
+      <div class="row h-100 justify-content-center align-item-center">
+        <div class="col-8 text-center">
+          <p class="h1 text-bold text-shadow">Altro invito alla azione!</p>
+        </div>
+        <div class="col-12 text-center">
+          <a
+            href="#form"
+            class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-black"
+            >Prenota ora 🍨</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- sezione recensioni -->
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2>I nostri feedback</h2>
+          <p class="lead text-secondary mb-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+            distinctio, dignissimos facere aliquam ex culpa unde totam libero
+            impedit ratione nobis cumque quas cupiditate architecto quod!
+            Recusandae dolorem explicabo perspiciatis?
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-lg-3 mb-">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-1.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-2.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-3.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-4.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-5.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-6.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-7.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="shadow p-2">
+            <img
+              src="./media/recensione-8.jpg"
+              class="img-fluid"
+              alt="feedback clienti"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container per carosello / per attivare il carosello cancellare ('d-none')-->
+    <div class="container my-5 py-5 d-none">
+      <div
+        class="row justify-content-between px-3 flex-nowrap"
+        style="overflow-x: scroll"
+      >
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-2 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-3 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-4 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-5 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-6 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-7 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-8 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-9 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+
+        <!-- commento n-10 -->
+        <div class="w-250 p-3 m-3 flex-shrink-0">
+          <p class="lead mb-0">Nome Cognome</p>
+          <p class="small font-ic">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+            voluptatem voluptate commodi iste placeat est, porro quas voluptas
+            dolor. Quisquam temporibus expedita eveniet voluptate quibusdam
+            quasi repellat molestias itaque quam.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- sezione con timer -->
+    <div class="container-fluid my-5 py-5 bg-section-timer">
+      <div class="row h-100 justify-content-center align-item-center">
+        <div class="col-12 text-center text-black text-shadow">
+          <p class="h1">Si sciolgono!</p>
+        </div>
+
+        <div class="col-6 col-md-2 text-black text-shadow text-center">
+          <p id="giorniMancanti" class="h1"></p>
+          <p class="fs-4">giorni</p>
+        </div>
+
+        <div class="col-6 col-md-2 text-black text-shadow text-center">
+          <p id="oreMancanti" class="h1"></p>
+          <p class="fs-4">ore</p>
+        </div>
+
+        <div class="col-6 col-md-2 text-black text-shadow text-center">
+          <p id="minutiMancanti" class="h1"></p>
+          <p class="fs-4">minuti</p>
+        </div>
+
+        <div class="col-6 col-md-2 text-black text-shadow text-center">
+          <p id="secondiMancanti" class="h1"></p>
+          <p class="fs-4">secondi</p>
+        </div>
+
+        <div class="col-12 text-center">
+          <a
+            href="#form"
+            class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-black"
+            >Prenota ora 🍨</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- form dei contatti -->
+    <div class="container my-my-5 py-5">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img
+            src="./media/gelatoonline.png"
+            class="w-50 mx-auto d-block mb-5"
+            alt=""
+          />
+          <p class="lead text-secondary my-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos enim
+            voluptate distinctio, eius repellendus assumenda neque cupiditate
+            itaque incidunt autem dolorem ullam error ducimus debitis veniam
+            exercitationem eaque! Eius, omnis.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <form id="form" class="card p-5 border-0 shadow" action="send">
+            <p class="h2 mb-4">Prenota il tuo gelato !</p>
+
+            <div class="form-group mb-4">
+              <label for="name" class="mb-0 text-secondary">Il tuo nome</label>
+              <input
+                type="text"
+                class="form-control border-bottom-yellow"
+                id="name"
+                placeholder="Christian"
+              />
             </div>
-        </footer>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <div class="form-group mb-4">
+              <label for="email" class="mb-0 text-secondary"
+                >La tua email</label
+              >
+              <input
+                type="email"
+                class="form-control border-bottom-yellow"
+                id="email"
+                placeholder="Christian.pinto@gmail.com"
+              />
+            </div>
 
-        <!-- My Scripts JS -->
-        <script src="./script.js"></script>
+            <div class="form-group mb-4">
+              <label for="tel" class="mb-0 text-secondary"
+                >Il tuo telefono</label
+              >
+              <input
+                type="tel"
+                class="form-control border-bottom-yellow"
+                id="tel"
+                placeholder="+39-4267902183"
+              />
+            </div>
 
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="/__/firebase/8.8.0/firebase-app.js"></script>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="privacy"
+              />
+              <label
+                class="form-check-label text-secondary font-ic"
+                for="privacy"
+                >Acceto termini e condizioni</label
+              >
+            </div>
 
-        <!-- TODO: Add SDKs for Firebase products that you want to use
+            <button
+              type="submit"
+              class="btn py-3 btn-lg rounded-pill text-uppercase bg-yellow text-black text-shadow"
+            >
+              Prenota ora 🍨
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid py-5 bg-footer">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="./media/logo-piccolo.svg" class="my-w-100" alt="" />
+          <hr class="hr" />
+          <p class="m-0">Via cardinal pacca n.13</p>
+          <p class="m-0">00165 Roma, Rm</p>
+          <p class="m-0">P.IVA IT42687440710</p>
+          <p class="mt-4">IlGelato@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My Scripts JS -->
+    <script src="./script.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.8.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
             https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="/__/firebase/8.8.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.8.0/firebase-analytics.js"></script>
 
-        <!-- Initialize Firebase -->
-        <script src="/__/firebase/init.js"></script>
-
-    </body>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
 </html>
