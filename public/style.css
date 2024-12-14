@@ -186,10 +186,11 @@ h1,h2,.h1,.h2,::placeholder{
     background-color: #d0ecf0;
 }
 
-.hr{
+.hr {
     width: 120px !important;
     height: 2px !important;
     background-color: darkgreen;
+    margin: 20px auto;
 }
 
 .my-w-100{

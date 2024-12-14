@@ -36,7 +36,7 @@ if(window.innerWidth > 576) {
 
 // Javascript per far si che il timer si afunzionante.
 
-let final = new Date('August 30, 2021')
+let final = new Date('January 5, 2025')
 let giorniMancanti = document.querySelector('#giorniMancanti')
 let oreMancanti = document.querySelector('#oreMancanti')
 let minutiMancanti = document.querySelector('#minutiMancanti')

@@ -17,6 +17,7 @@
   },
   "homepage": "https://gitlab.com/Chriskp1710/mia-gelateria#readme",
   "dependencies": {
-    "firebase": "^8.8.0"
+    "firebase": "^11.1.0",
+    "landing-page-gelateria": "file:"
   }
 }
